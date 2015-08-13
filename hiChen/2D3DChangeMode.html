@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D、3D转换示例</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #div1{
+            transform: translate(200px,200px);
+            /*safari chrome*/
+            -webkit-transform: translate(200px,200px);
+            /*opera*/
+            -o-transform: translate(200px,200px);
+            /*IE*/
+            -ms-transform: translate(200px,200px);
+            /*FireFox*/
+            -moz-transform: translate(200px,200px);
+        }
+    </style>
+</head>
+<body>
+    <div>原来</div>
+    <br/>
+    <div id="div1">变换后</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位示例</title>
+    <style>
+        #posi1{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            position: absolute;
+            left: 25px;
+        }
+        #posi2{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            left: 200px;
+        }
+        #posi3{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            position: static;
+            left: 500px;
+        }
+        #posi4{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="posi1"></div>
+    <div id="posi2"></div>
+    <div id="posi3"></div>
+    <div id="posi4"></div>
+    <script>
+        for(var i=0;i<100;i++){
+            document.write(i+"<br/>");
+        }
+    </script>
+</body>
+</html>

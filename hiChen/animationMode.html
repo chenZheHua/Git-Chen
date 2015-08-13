@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画示例</title>
+    <style>
+        #anim{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            /*指定动画名称为anim 播放5s 可重复播放*/
+            animation: anim 5s infinite alternate;
+            -webkit-animation: anim 5s infinite alternate;
+            -o-animation: anim 5s infinite alternate;
+            -ms-animation:anim 5s infinite alternate;
+            -moz-animation: anim 5s infinite alternate;;
+        }
+        @keyframes anim {
+            0%{background: red;
+                left: 100px;
+                right: 40px;}
+            50%{background: green;
+                left: 1000px;
+                right: 1000px;
+                top: 500px;}
+            100%{
+                background: blue;
+                left: 0px;
+                right: 0px;}
+        }
+        -ms-@keyframes anim {
+                0%{background: red;
+                    left: 100px;
+                    right: 40px;}
+                50%{background: green;
+                    left: 1000px;
+                    right: 1000px;
+                    top: 500px;}
+                100%{
+                    background: blue;
+                    left: 0px;
+                    right: 0px;}
+            }
+    </style>
+</head>
+<body>
+    <div id="anim"></div>
+</body>
+</html>
